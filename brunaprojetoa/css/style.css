@@ -1,0 +1,112 @@
+body {
+    background-color: #f5f0ff; /* Lilás claro */
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#cxprincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+#cabecalho {
+    width: 100%;
+    background-image: linear-gradient(to bottom, #8d19fa, #bc7afa);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+    padding: 20px;
+}
+
+#cabecalho h1 {
+    font-size: 32px;
+    color: #ffffff; /* Branco */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra de texto */
+    margin: 0;
+}
+
+#cxlogin {
+    width: 20%;
+    background-color: #ffffff; /* Branco */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+#cxlogin input[type="email"],
+#cxlogin input[type="password"] {
+    width: calc(100% - 22px); /* 22px é a soma do padding e da borda */
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#cxlogin input[type="submit"] {
+    width: calc(100% - 22px); /* 22px é a soma do padding e da borda */
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff; /* Branco */
+    background-color: #8d19fa; /* Roxo */
+    cursor: pointer;
+}
+
+#cxlogin input[type="submit"]:hover {
+    background-color: #bc7afa; /* Roxo mais claro */
+}
+
+#cxlogin a {
+    color: #8d19fa; /* Cor roxa */
+}
+
+#cxlogin a:hover {
+    color: #bc7afa; /* Roxo mais claro */
+}
+
+#rodape {
+    width: 100%;
+    background-image: linear-gradient(to bottom, #8d19fa, #bc7afa);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-align: center;
+    padding: 20px;
+    color: #ffffff; /* Branco */
+}
+
+#rodape h2 {
+    font-size: 24px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left, .right {
+    flex: 1;
+}
+
+.left h2, .right p {
+    margin: 0;
+}
+
+.footer-content::before,
+.footer-content::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px dashed #ffffff; /* Cor e estilo da linha de separação */
+    margin: 0 20px; /* Margem para a linha de separação */
+}
+
+.footer-content::before {
+    margin-right: 0;
+}
